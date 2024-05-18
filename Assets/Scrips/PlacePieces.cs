@@ -70,7 +70,9 @@ public class PlacePieces : MonoBehaviour
         piesa = Instantiate(ReginaAlba, new Vector3(20, 0.1f, 0), Quaternion.identity);
 
         for (int i = 0; i < 36; i += 5)
+        {
             piesa = Instantiate(PionAlb, new Vector3(i, 0.1f, 5), Quaternion.identity);
+        }
 
     }
 }
