@@ -51,14 +51,10 @@ public class PlacePieces : MonoBehaviour
         piesa = Instantiate(RegeNegru, new Vector3(15, 0.1f, 35), Quaternion.identity);
         piesa = Instantiate(ReginaNeagra, new Vector3(20, 0.1f, 35), Quaternion.identity);
 
-        piesa = Instantiate(PionNegru, new Vector3(0, 0.1f, 30), Quaternion.identity);
-        piesa = Instantiate(PionNegru, new Vector3(5, 0.1f, 30), Quaternion.identity);
-        piesa = Instantiate(PionNegru, new Vector3(10, 0.1f, 30), Quaternion.identity);
-        piesa = Instantiate(PionNegru, new Vector3(15, 0.1f, 30), Quaternion.identity);
-        piesa = Instantiate(PionNegru, new Vector3(20, 0.1f, 30), Quaternion.identity);
-        piesa = Instantiate(PionNegru, new Vector3(25, 0.1f, 30), Quaternion.identity);
-        piesa = Instantiate(PionNegru, new Vector3(30, 0.1f, 30), Quaternion.identity);
-        piesa = Instantiate(PionNegru, new Vector3(35, 0.1f, 30), Quaternion.identity);
+        for (int i = 0; i < 36; i += 5)
+        {
+            piesa = Instantiate(PionNegru, new Vector3(i, 0.1f, 30), Quaternion.identity);
+        }
 
         //adaug piese albe
         piesa = Instantiate(TuraAlba, new Vector3(0, 0.1f, 0), Quaternion.identity);
@@ -73,14 +69,8 @@ public class PlacePieces : MonoBehaviour
         piesa = Instantiate(RegeAlb, new Vector3(15, 0.1f, 0), Quaternion.identity);
         piesa = Instantiate(ReginaAlba, new Vector3(20, 0.1f, 0), Quaternion.identity);
 
-        piesa = Instantiate(PionAlb, new Vector3(0, 0.1f, 5), Quaternion.identity);
-        piesa = Instantiate(PionAlb, new Vector3(5, 0.1f, 5), Quaternion.identity);
-        piesa = Instantiate(PionAlb, new Vector3(10, 0.1f, 5), Quaternion.identity);
-        piesa = Instantiate(PionAlb, new Vector3(15, 0.1f, 5), Quaternion.identity);
-        piesa = Instantiate(PionAlb, new Vector3(20, 0.1f, 5), Quaternion.identity);
-        piesa = Instantiate(PionAlb, new Vector3(25, 0.1f, 5), Quaternion.identity);
-        piesa = Instantiate(PionAlb, new Vector3(30, 0.1f, 5), Quaternion.identity);
-        piesa = Instantiate(PionAlb, new Vector3(35, 0.1f, 5), Quaternion.identity);
+        for (int i = 0; i < 36; i += 5)
+            piesa = Instantiate(PionAlb, new Vector3(i, 0.1f, 5), Quaternion.identity);
 
     }
 }
